@@ -38,7 +38,7 @@ function Signup() {
         setLoading(true);
 
         try {
-            const response = await axios.post("http://localhost:3000/api/auth/signup", {
+            const response = await axios.post("https://linkerweb-01.vercel.app/api/auth/signup", {
                 username,
                 email,
                 password,
