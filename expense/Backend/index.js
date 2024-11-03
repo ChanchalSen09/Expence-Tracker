@@ -13,6 +13,9 @@ app.use(express.json());
 
 // Connect to MongoDB
 connectDB();
+app.get('*', (req, res) => {
+  res.send('Welcome to the Learnhub Backend!');
+});
 
 // Import and use the auth routes
 const authRoutes = require('./routes/auth');
