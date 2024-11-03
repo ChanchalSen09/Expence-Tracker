@@ -35,7 +35,7 @@ function OtpPage() { // Removed email from props
         setLoading(true);
 
         try {
-            const response = await fetch(`http://localhost:3000/api/auth/verify-otp`, {
+            const response = await fetch(`https://linkerweb-01.vercel.app/api/auth/verify-otp`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ function OtpPage() { // Removed email from props
         setLoading(true);
 
         try {
-            const response = await fetch(`http://localhost:3000/api/auth/resend-otp`, {
+            const response = await fetch(`https://linkerweb-01.vercel.app/api/auth/resend-otp`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
